@@ -7,20 +7,20 @@ a { -webkit-transition: all 0.3s ease 0s;
     ;text-decoration:none;color: #2c2c2c;
   }
 a:hover {
-  color: #519F10;
+  color: #fd6500;
   text-decoration: none;
   }
 
 /**/
 .header-area {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   .bg-gray{
     background: #F3F3F3;
   }
 .logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom:10px;
   }
 .header-main-content {
     justify-content: flex-end;
@@ -69,7 +69,7 @@ a:hover {
   margin-top: 35px ;
   }
 .main-menu-area ul > li:hover a {
-  color: #519F10;
+  color: #fd6500;
   }
 .right-box {
     margin-top: 34px;
@@ -154,4 +154,46 @@ a:hover {
 }
 .submit-button:hover {
   background: #000 none repeat scroll 0 0;
+}
+
+.section-1{
+	padding-top: 40px;
+	padding-bottom: 20px;
+  text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+.text-italic {
+	font-style: italic;
+}
+
+
+/*banner*/
+
+.bg-img-1{
+	background-size: cover;
+}
+.bg-img-1{
+background-image: url("../img/image7.jpg");
+	background-attachment: fixed;
+}
+.parallax-container {
+	position: relative;
+	overflow: hidden;
+}
+.text-italic2 {
+	font-style: italic;
+  text-align: center;
+  color: #e5e5e5;
+  font-size: 50px;
+  font-weight: 500;
+}
+.banner{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.strong{
+  font-weight: 500;
 }
