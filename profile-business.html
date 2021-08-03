@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Perfil</title>
+    <!--Style Sheets-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <link rel="stylesheet" href="./css/icofont.css">
+</head>
+<body>
+    <header>
+        <div class="header-area bg-gray">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logo.PNG" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-main-content">
+                            <div class="main-menu-area">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Inicio</a></li>
+                                        <li><a href="./about_us.html">Nosotros</a></li>
+                                        <li><a href="./shop.html">Tienda<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./drinks.html">Bebidas</a></li>
+                                                <li><a href="./fast-food.html">Comida rápida</a></li>
+                                                <li><a href="./food.html">Comida corrida</a></li>
+                                                <li><a href="./desserts.html">Postres</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./register-user.html">Soy usuario</a></li>
+                                                <li><a href="./register-bussines.html">Soy comercio</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./contact-us"> Contáctanos</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="right-box">
+                               <div class="top-login-menu">
+                                    <div class="top-login-inner"><a href="login-register.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+<!--Register User-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-4" style="text-align: left;">
+            <h3 style="margin-bottom: 3rem;">Perfil</h3>
+            
+                <div class="register-area">
+                    <form action="#" id="validation-profile">
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <label for="name-profile">Nombre del Titular<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="name-profile" placeholder="Nombre del Titular" required>
+                            <div class="invalid-tooltip">
+                                Proporcione un Nombre Válido.
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <label for="name-business">Nombre del negocio<span class="required">*</span></label>
+                            <input type="text" class="form-control" id="name-business" placeholder="Nombre del negocio" required>
+                            <div class="invalid-tooltip">
+                                Proporcione un Nombre Válido.
+                            </div>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <label for="phone-profile">Teléfono<span class="required">*</span></label>
+                            <input type="text" maxlength="10" onkeypress="return numberPhone(evento)" class="form-control" id="phone-profile" placeholder="Teléfono" required>
+                            <div class="invalid-tooltip">
+                                Proporcione un Teléfono Válido.
+                            </div>
+                        </div>
+                        
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <label for="category-business">Categoría<span class="required">*</span></label>
+                            <select class="form-control" id="category-business">
+                                <option></option>
+                                <option>Bebidas</option>
+                                <option>Comida corrida</option>
+                                <option>Comida rápida</option>
+                                <option>Postres</option>
+                            </select>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <div style="display: flex; justify-content: center;"><img src="#" class="image-profile"/></div>
+                            <br/>
+                        </div>
+                        <div class="form-row" style="margin-bottom: 2rem;">
+                            <label>Añade una foto de perfil<span class="required">*</span></label>
+                            <input type="file" class="form-control-file" id="selectFile" style="border:0">
+    
+                        </div>
+                        <div style="text-align: right;">
+                            <button class="submit-button" type="submit">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <div class="col-8">
+            <div class="main-menu-area" style="text-align: right;">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Ordenes</a></li>
+                        <li><a href="./about_us.html">Historial</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <h4>Productos</h4>
+            <br/>
+            <div class="register-area">
+                <form action="#" class="form-inline" role="form">
+                <p>
+                    <input type="text" class="input-text" placeholder="Nombre del producto">
+                    <input type="text" class="input-text" placeholder="Precio $0.00">
+                   
+                </p>
+            </form>
+                <p class="form-row">
+                    <button class="submit-button" type="submit">Añadir</button>
+                    <button class="submit-button" type="submit">Guardar</button>
+                </p>
+                <form>
+                    <p class="form-row">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="#" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </p>
+                    <p class="form-row">
+                        <label>Añade fotos a la galeria<span class="required">*</span></label>
+                        <input type="file" class="form-control-file" id="selectFile" style="border:0">
+                    </p>
+                    
+                    <p style="text-align: right;">
+                        <button class="submit-button" type="submit">Actualizar</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        
+    </div>
+    
+</div>
+  
+  <!--Footer-->
+  
+  <footer class="page-foot text-left" style="margin-top: 10rem;">
+      <div class="bg-gray-darker footer-area" >
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="letter">
+                        <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
+                        <p>E-mail: <span class="page-foot">correo@electronico.com</span></p>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </footer>
+
+<!--JS-->
+<script src="./js/profile-bussines.js" type="text/javascript"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+
+
+
+</body>
+</html>

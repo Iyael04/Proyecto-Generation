@@ -294,3 +294,13 @@ background-image: url("../img/image7.jpg");
   font-weight: bold;
   font-size: 20px;
 }
+
+.image-profile{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+}
