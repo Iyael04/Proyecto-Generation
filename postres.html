@@ -6,52 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Aceradecomida.com | Productos</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <link rel="stylesheet" href="./css/icofont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Sliderstylesheet-->
+    <link rel="stylesheet" href="css/sss.css">
+
+        <!--Start Scripts Slider-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<title>Aceradecomida.com | Productos</title>
 </head>
 
 
 <body>
 
-        <div class="container-fluid" style="padding: 0px; margin-top:5rem;">
-
-                <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">
-                      <img src="./src/imagenes/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="Imagen Acera">
-                      Aceradecomida.com</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                      <ul class="navbar-nav">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="./Inicio.html">INICIO<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="./categoria.html">CATEGORÍA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contactenos.html">CONTÁCTANOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">INGRESAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./registrarse.html">REGISTRARSE</a>
-                        </li>
-                      </ul>
+  <header>
+    <div class="header-area bg-gray">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="./img/logo.PNG" alt=""></a>
                     </div>
-
-                    <form class="form-inline">
-                      <input class="form-control mr-sm- bg-dark" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-
-                </nav>
+                </div>
+                <div class="col-lg-9 col-md-8">
+                    <div class="header-main-content">
+                        <div class="main-menu-area">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Inicio</a></li>
+                                    <li><a href="./about_us.html">Nosotros</a></li>
+                                    <li><a href="./shop.html">Tienda<i class="icofont icofont-simple-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="./products-drinks.html">Bebidas</a></li>
+                                            <li><a href="./food-fast.html">Comida rápida</a></li>
+                                            <li><a href="./food.html">Comida corrida</a></li>
+                                            <li><a href="./desserts.html">Postres</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="./register-user.html">Soy usuario</a></li>
+                                            <li><a href="./register-bussines.html">Soy comercio</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./contact-us.html"> Contáctanos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="right-box">
+                           <div class="top-login-menu">
+                                <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
         </div><!--container-fluid-->
 
