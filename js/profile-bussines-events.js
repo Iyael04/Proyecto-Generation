@@ -34,7 +34,7 @@ function listProductos (){
         $("#list-products").append(
                         `<tr>
                             <td>${data.Producto}</td>
-                            <td align="center">$${data.Price}</td>
+                            <td align="center">$${data.Price}.00</td>
                             <td align="center"> <a id="${i}" class="btnEditar" href="#"> <img src="./img/icon-edit.gif" width="25px" height="25px"/></a></td>
                             <td align="center"> <a id="${i}" class="btnEliminar" href="./profile-business.html"> <img src="./img/icon-trash.gif" width="25px" height="25px"/></a></td>
                         </tr>`);
