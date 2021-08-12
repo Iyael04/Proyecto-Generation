@@ -470,7 +470,7 @@ background-image: url("../img/image7.jpg");
 .product-container img {
   width: 350px;
   padding-top: 15px;
-  padding-left: 30px;
+  margin-left: 125px;
 }
 
 .page-content{
