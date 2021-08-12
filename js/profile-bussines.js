@@ -19,7 +19,7 @@ function validationProfile(option){
         nameProfile.classList.add('is-valid');
     }    
 }
-validation.addEventListener('submit', validationProfile);
+//validation.addEventListener('submit', validationProfile);
 
 phoneBusiness.addEventListener('keypress', (evento) => {
     evento.preventDefault()
