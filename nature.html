@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Vegano</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+   
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <link rel="stylesheet" href="./css/icofont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+   
+
+</head>
+<body>
+    <header>
+        <div class="header-area bg-gray">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logo.PNG" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-main-content">
+                            <div class="main-menu-area">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Inicio</a></li>
+                                        <li><a href="./about_us.html">Nosotros</a></li>
+                                        <li><a href="./shop.html">Tienda<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./drinks.html">Bebidas</a></li>
+                                                <li><a href="./food-fast.html">Comida rápida</a></li>
+                                                <li><a href="./nature.html">Vegetariano</a></li>
+                                                <li><a href="./desserts.html">Postres</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./register-user.html">Soy usuario</a></li>
+                                                <li><a href="./register-bussines.html">Soy comercio</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./contact-us.html"> Contáctanos</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="right-box">
+                                <div class="mine-cart-box">
+                                    <a href="#"><i class="icon-handbag"></i><span id="checkout"> $ 0.00</span></a>
+                                    <ul class="mini-cart">
+                                        <li class="mini-cart-btns">
+                                            <div class="cart-btns">
+                                                <a href="cart.html">Ver carrito</a>
+                                                <a href="pay.html">Comprar</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-login-menu">
+                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  <!--Section-1-->
+
+
+  
+  
+ <section class="section-1">
+     <div class="page-content">
+         <!--Aguachile-->
+         <div class="product-container col-sm-4 card">
+                <img src="./img_vegano/img-01.jpg">
+                <div class="description">
+                    <h4><b>Aguachile</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#aguachileModal">Ver detalles</button>
+                    <!-- aguachileModal -->
+                    <div class="modal fade" id="aguachileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"><b>Aguachile</b></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="zoom" src="./img_vegano/img-01.jpg"><br><br>
+                                        <div class="ratings">
+                                            <p>Aguachile de palmitos y frutas, servido con aguacate, brotes de cilantro y algas nori o totopos.</p>
+                                            <span class="product-rating">$ 75.00</span>
+                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                            <div class="rating-text"> <span>46 opiniones</span> </div>
+                                            <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn_btn-primary" onclick="add('Aguachile', 75.00)">Agregar</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+         </div>
+         <!--Waffle Sandwich Chewbacca-->
+         <div class="product-container col-sm-4 card">
+            <img src="./img_vegano/img-02.jpeg">
+            <div class="description">
+                <h4><b>Waffle Sandwich Chewbacca</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#waffleModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="waffleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Waffle Sandwich Chewbacca</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_vegano/img-02.jpeg"><br><br>
+                                    <div class="ratings">
+                                        <p>Masa con aguacate y espinaca relleno de tocino de soya, “queso”, espinaca, estofado de champinones, jitomate, cebolla caramelizada, pesto de albahaca y mayonesa casera, se sirve con ensalada.</p>
+                                        <span class="product-rating">$ 95.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Waffle Sandwich Chewbacca', 95.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+         </div>
+
+        <!--Banderillas-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_vegano/img-03.jpeg">
+            <div class="description">
+                <h4><b>Banderillas</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#banderillasModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="banderillasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Banderillas</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_vegano/img-03.jpeg"><br><br>
+                                    <div class="ratings">
+                                        <p>Salchichas de trigo y soya con cubierta crujiente, se sirven con catsup, mostaza y brotes.</p>
+                                        <span class="product-rating">$ 60.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Banderillas', 60.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Protein bowl-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_vegano/img-04.jpg">
+            <div class="description">
+                <h4><b>Protein bowl</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#proteinModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="proteinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Protein bowl</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_vegano/img-04.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Mezcla de frijol, quinoa y garbanzo, acompañada de jitomate, granos de elote, cebolla, pimiento, aguacate y brotes de cilantro. Se sirve con aderezo de piña y habanero</p>
+                                        <span class="product-rating">$130.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Protein bowl',130.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Bali bowl-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_vegano/img-05.jpg">
+            <div class="description">
+                <h4><b>Bali bowl</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#baliModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="baliModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Bali bowl</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_vegano/img-05.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Bowl con arroz al vapor, con tofu a la plancha, piña, aguacate, zanahoria, pepino, alga nori y rábanos. Se sirve con reducción de soya.</p>
+                                        <span class="product-rating">$110.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Bali bowl', 110.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Watto Wrap-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_vegano/img-06.jpeg">
+            <div class="description">
+                <h4><b>Watto Wrap</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#wattoModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="wattoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Watto Wrap</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_vegano/img-06.jpeg"><br><br>
+                                    <div class="ratings">
+                                        <p>Tortilla de harina rellena de portobello empanizado, col morada, brocoli, jitomate deshidratado, mayonesa de chipotle casera, base de lechuga y germen, viene con una reduccion de salsa de soya y se acompana de arroz.</p>
+                                        <span class="product-rating">$115.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Watto Wrap', 115.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+ </section>
+
+  <!--Banner-->
+  <section class="bg-img-1">
+      <section class="parallax-container" data-parallax-img="img/image7.jpg">
+        <div class="parallac-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 banner">
+                        <h4 class="text-italic2">Entrega a domiclio</h4>
+                        <h4 class="text-italic2">Gratuita</h4>
+                        <h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+  
+  <!--Footer-->
+  
+  <footer class="page-foot text-left">
+      <div class="bg-gray-darker footer-area" >
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo_footer.png" alt="logo"></a>
+                    </div>
+                    <div class="letter">
+                        <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
+                        <p>E-mail: <span class="page-foot">correo@electronico.com</span></p>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  <script src="./js/add.js"></script>
+</body>
+    
+</html>
+
+

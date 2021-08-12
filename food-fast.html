@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Vegano</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+   
+    <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <link rel="stylesheet" href="./css/icofont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+    
+   
+
+</head>
+<body>
+    <header>
+        <div class="header-area bg-gray">
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logo.PNG" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="header-main-content">
+                            <div class="main-menu-area">
+                                <nav>
+                                    <ul>
+                                        <li><a href="index.html">Inicio</a></li>
+                                        <li><a href="./about_us.html">Nosotros</a></li>
+                                        <li><a href="./shop.html">Tienda<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./drinks.html">Bebidas</a></li>
+                                                <li><a href="./food-fast.html">Comida rápida</a></li>
+                                                <li><a href="./nature.html">Vegetariano</a></li>
+                                                <li><a href="./desserts.html">Postres</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="./register-user.html">Soy usuario</a></li>
+                                                <li><a href="./register-bussines.html">Soy comercio</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="./contact-us.html"> Contáctanos</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="right-box">
+                                <div class="mine-cart-box">
+                                    <a href="#"><i class="icon-handbag"></i><span id="checkout"> $ 0.00</span></a>
+                                    <ul class="mini-cart">
+                                        <li class="mini-cart-btns">
+                                            <div class="cart-btns">
+                                                <a href="cart.html">Ver carrito</a>
+                                                <a href="pay.html">Comprar</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-login-menu">
+                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  <!--Section-1-->
+
+
+  
+  
+ <section class="section-1">
+     <div class="page-content">
+         <!--Pambazo-->
+         <div class="product-container col-sm-4 card">
+                <img src="./img_food_fast/pambazo.jpg">
+                <div class="description">
+                    <h4><b>Pambazo</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#aguachileModal">Ver detalles</button>
+                    <!-- PambazoModal -->
+                    <div class="modal fade" id="aguachileModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel"><b>Pambazo</b></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="zoom" src="./img_food_fast/pambazo.jpg"><br><br>
+                                        <div class="ratings">
+                                            <p>Pambazo con chorizo papas, lechuga y una increible salsa chilanga</p>
+                                            <span class="product-rating">$ 60.00</span>
+                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                            <div class="rating-text"> <span>98 opiniones</span> </div>
+                                            <div class="vendedor-text"> <span>Vendedor 2</span> <a href="#">Más Info</a> </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn_btn-primary" onclick="add('Aguachile', 60.00)">Agregar</button>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+         </div>
+         <!--Gordita-->
+         <div class="product-container col-sm-4 card">
+            <img src="./img_food_fast/gordita.jpg">
+            <div class="description">
+                <h4><b>Gordita de chicarrón</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#waffleModal">Ver detalles</button>
+                <!-- GorditaModal -->
+                <div class="modal fade" id="waffleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Gordita de chicarrón</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_food_fast/gordita.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Masa con chicharrón, queso, lechuga y una excelente salsa“</p>
+                                        <span class="product-rating">$ 25.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>100 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 2</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Waffle Sandwich Chewbacca', 25.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+         </div>
+
+        <!--Pizza-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_food_fast/pizza.jpg">
+            <div class="description">
+                <h4><b>Pizza</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#banderillasModal">Ver detalles</button>
+                <!-- PizzaModal -->
+                <div class="modal fade" id="banderillasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Pizza</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_food_fast/pizza.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Pizza que incluye peperoni, champiñones y una excelente salsa de tomate</p>
+                                        <span class="product-rating">$ 100.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>79 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 2</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Banderillas', 100.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Quesadilla bowl-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_food_fast/quesadilla.jpg">
+            <div class="description">
+                <h4><b>Quesadilla</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#proteinModal">Ver detalles</button>
+                <!-- waffleModal -->
+                <div class="modal fade" id="proteinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Quesadilla</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_food_fast/quesadilla.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Tortilla 100% de trigo, compuesta por queso, jamon y una excelente salsa</p>
+                                        <span class="product-rating">$25.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>200 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 2</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Protein bowl',25.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Tacos-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_food_fast/tacos.jpg">
+            <div class="description">
+                <h4><b>Tacos Mexicanos</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#baliModal">Ver detalles</button>
+                <!-- TacosModal -->
+                <div class="modal fade" id="baliModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Tacos Mexicanos</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_food_fast/tacos.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Tortilla 100% de maiz, que contiene carne Res de la más alta calidad acompañados de cilandro, cebolla y nuestra famosa salsa chilanga.</p>
+                                        <span class="product-rating">$50.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>90 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 2</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Bali bowl',50.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+        <!--Torta-->
+        <div class="product-container col-sm-4 card">
+            <img src="./img_food_fast/torta.jpg">
+            <div class="description">
+                <h4><b>Torta Chilanga</b></h4>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#wattoModal">Ver detalles</button>
+                <!-- TortaModal -->
+                <div class="modal fade" id="wattoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Torta Chilanga</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="zoom" src="./img_food_fast/torta.jpg"><br><br>
+                                    <div class="ratings">
+                                        <p>Pan de la más alta calidad, que contiene milanesa de res acompañada de jitomat, cebolla, lechuga, aguacate y una exquisita salsa</p>
+                                        <span class="product-rating">$85.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>56 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary" onclick="add('Watto Wrap', 85.00)">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+ </section>
+
+  <!--Banner-->
+  <section class="bg-img-1">
+      <section class="parallax-container" data-parallax-img="img/image7.jpg">
+        <div class="parallac-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 banner">
+                        <h4 class="text-italic2">Entrega a domiclio</h4>
+                        <h4 class="text-italic2">Gratuita</h4>
+                        <h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  </section>
+  
+  <!--Footer-->
+  
+  <footer class="page-foot text-left">
+      <div class="bg-gray-darker footer-area" >
+          <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="logo">
+                        <a href="./index.html"><img src="./img/logo_footer.png" alt="logo"></a>
+                    </div>
+                    <div class="letter">
+                        <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
+                        <p>E-mail: <span class="page-foot">correo@electronico.com</span></p>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+  <script src="./js/add.js"></script>
+</body>
+    
+</html>
