@@ -9,6 +9,7 @@
     <!--Style Sheets-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/simple-line-icons.css">
     <link rel="stylesheet" href="./css/icofont.css">
 </head>
@@ -68,39 +69,52 @@
             <h3 style="margin-bottom: 3rem;">Perfil</h3>
             
                 <div class="register-area">
-                    <form action="#" id="validation-profile">
-                        <div class="form-row" style="margin-bottom: 2rem;">
-                            <label for="name-profile">Nombre del Titular<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="name-profile" placeholder="Nombre del Titular" required>
-                            <div class="invalid-tooltip">
-                                Proporcione un Nombre Válido.
+                    <form action="" id="formulario" class="formulario">
+                        <!-- name titular -->
+                        <div class="formulario__grupo" id= "grupo__nombre"style="margin-bottom: 2rem;">
+                            <label for="name-profile">Nombre del titular<span class="required">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre del titular" required>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>   
                             </div>
+                            <p class="formulario__input-error">El nombre solo puede contener letras</p>     
                         </div>
-                        <div class="form-row" style="margin-bottom: 2rem;">
-                            <label for="name-business">Nombre del negocio<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="name-business" placeholder="Nombre del negocio" required>
-                            <div class="invalid-tooltip">
-                                Proporcione un Nombre Válido.
+                        <!-- end name titular -->
+                        <!-- name business -->
+                        <div class="formulario__grupo" id= "grupo__business"style="margin-bottom: 2rem;">
+                            <label for="name-profile">Nombre del negocio<span class="required">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" id="business" name="business" placeholder="Nombre del negocio" required>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>   
                             </div>
+                            <p class="formulario__input-error">El nombre del negocio solo puede contener letras</p>     
                         </div>
-                        <div class="form-row" style="margin-bottom: 2rem;">
-                            <label for="phone-profile">Teléfono<span class="required">*</span></label>
-                            <input type="text" maxlength="10" onkeypress="return numberPhone(evento)" class="form-control" id="phone-profile" placeholder="Teléfono" required>
-                            <div class="invalid-tooltip">
-                                Proporcione un Teléfono Válido.
+                        <!-- end name business -->
+                        <!-- telefono -->
+                        <div class="formulario__grupo" id= "grupo__telefono"style="margin-bottom: 2rem;">
+                            <label for="name-profile">Teléfono<span class="required">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <input type="text" class="formulario__input" id="telefono" name="telefono" placeholder="Telefono del negocio" required>
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>   
                             </div>
+                            <p class="formulario__input-error">Proporcione un teléfono válido.</p>     
                         </div>
-                        
-                        <div class="form-row" style="margin-bottom: 2rem;">
-                            <label for="category-business">Categoría<span class="required">*</span></label>
-                            <select class="form-control" id="category-business">
-                                <option></option>
-                                <option>Bebidas</option>
-                                <option>Comida corrida</option>
-                                <option>Comida rápida</option>
-                                <option>Postres</option>
-                            </select>
+                        <!-- end telefono -->
+                        <!-- category -->
+                        <div class="formulario__grupo" style="margin-bottom: 2rem;">
+                            <label for="category">Categoría<span class="required">*</span></label>
+                            <div class="formulario__grupo-input">
+                                <select class="formulario__input" id="category" name="category">
+                                    <option>Bebidas</option>
+                                    <option>Comida corrida</option>
+                                    <option>Comida rápida</option>
+                                    <option>Postres</option>
+                                </select>
+                            </div>
+                            <p class="formulario__input-error">Selecione una categoria.</p>     
                         </div>
+                        <!--end category -->
+                        <!-- foto -->
                         <div class="form-row" style="margin-bottom: 2rem;">
                             <div style="display: flex; justify-content: center;"><img src="#" class="image-profile"/></div>
                             <br/>
@@ -110,8 +124,9 @@
                             <input type="file" class="form-control-file" id="selectFile" style="border:0">
     
                         </div>
+                        <!-- end foto -->
                         <div style="text-align: right;">
-                            <button class="submit-button" type="submit">Guardar</button>
+                            <button class="submit-button" class="btn-guardar" id="btn-guardar" type="submit">Guardar</button>
                         </div>
                     </form>
                 </div>
