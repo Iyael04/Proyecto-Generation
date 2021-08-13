@@ -132,7 +132,7 @@ a:hover {
   .zoom {
     transition: transform .2s; 
     display: block;
-    margin-left: 35px;
+    padding-right: 97px;
 }
  
 .zoom:hover {
@@ -468,9 +468,9 @@ background-image: url("../img/image7.jpg");
 }
 
 .product-container img {
-  width: 350px;
+  width: 450px;
   padding-top: 15px;
-  margin-left: 125px;
+  margin-left: 80px;
 }
 
 .page-content{

@@ -10,6 +10,9 @@ const expresiones = {
 	telefono: /^\d{7,10}$/ // 7 a 10 numeros.
 }
 
+
+
+
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 
@@ -21,12 +24,15 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__usuario i').classList.remove('fa-times-circle');
 				document.querySelector('#grupo__usuario .formulario__input-error').classList.remove('formulario__input-error-activo');
 
+				
 			}else{
 				document.getElementById('grupo__usuario').classList.add('formulario__grupo-incorrecto');
 				document.getElementById('grupo__usuario').classList.remove('formulario__grupo-correcto');
 				document.querySelector('#grupo__usuario i').classList.add('fa-times-circle');
 				document.querySelector('#grupo__usuario i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__usuario .formulario__input-error').classList.add('formulario__input-error-activo');
+			
+				
 			}
 		break;
 
@@ -38,12 +44,16 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__nombre i').classList.remove('fa-times-circle');
 				document.querySelector('#grupo__nombre .formulario__input-error').classList.remove('formulario__input-error-activo');
 
+				
+
 			}else{
 				document.getElementById('grupo__nombre').classList.add('formulario__grupo-incorrecto');
 				document.getElementById('grupo__nombre').classList.remove('formulario__grupo-correcto');
 				document.querySelector('#grupo__nombre i').classList.add('fa-times-circle');
 				document.querySelector('#grupo__nombre i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__nombre .formulario__input-error').classList.add('formulario__input-error-activo');
+
+				
 			}
 		break;
 
@@ -55,12 +65,16 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__apellido i').classList.remove('fa-times-circle');
 				document.querySelector('#grupo__apellido .formulario__input-error').classList.remove('formulario__input-error-activo');
 
+				
+
 			}else{
 				document.getElementById('grupo__apellido').classList.add('formulario__grupo-incorrecto');
 				document.getElementById('grupo__apellido').classList.remove('formulario__grupo-correcto');
 				document.querySelector('#grupo__apellido i').classList.add('fa-times-circle');
 				document.querySelector('#grupo__apellido i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__apellido .formulario__input-error').classList.add('formulario__input-error-activo');
+
+				
 			}
 		break;
 		case "nombre-comercio":
@@ -112,6 +126,10 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__password i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__password .formulario__input-error').classList.add('formulario__input-error-activo');
 			}
+			validarPassword2();
+		break;
+		case "password2":
+			validarPassword2();
 		break;
 
 		case "email":
@@ -122,12 +140,16 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__email i').classList.remove('fa-times-circle');
 				document.querySelector('#grupo__email .formulario__input-error').classList.remove('formulario__input-error-activo');
 
+				
+
 			}else{
 				document.getElementById('grupo__email').classList.add('formulario__grupo-incorrecto');
 				document.getElementById('grupo__email').classList.remove('formulario__grupo-correcto');
 				document.querySelector('#grupo__email i').classList.add('fa-times-circle');
 				document.querySelector('#grupo__email i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__email .formulario__input-error').classList.add('formulario__input-error-activo');
+
+				
 			}
 		break;
 
@@ -139,15 +161,41 @@ const validarFormulario = (e) => {
 				document.querySelector('#grupo__telefono i').classList.remove('fa-times-circle');
 				document.querySelector('#grupo__telefono .formulario__input-error').classList.remove('formulario__input-error-activo');
 
+				
+
 			}else{
 				document.getElementById('grupo__telefono').classList.add('formulario__grupo-incorrecto');
 				document.getElementById('grupo__telefono').classList.remove('formulario__grupo-correcto');
 				document.querySelector('#grupo__telefono i').classList.add('fa-times-circle');
 				document.querySelector('#grupo__telefono i').classList.remove('fa-check-circle');
 				document.querySelector('#grupo__telefono .formulario__input-error').classList.add('formulario__input-error-activo');
+
+				
 			}
 		break;
 	}
+}
+
+const validarPassword2 = () =>{
+	const inputPassword1 = document.getElementById('password');
+	const inputPassword2 = document.getElementById('password2');
+
+if (inputPassword1.value !== inputPassword2.value){
+				document.getElementById('grupo__password2').classList.add('formulario__grupo-incorrecto');
+				document.getElementById('grupo__password2').classList.remove('formulario__grupo-correcto');
+				document.querySelector('#grupo__password2 i').classList.add('fa-times-circle');
+				document.querySelector('#grupo__password2 i').classList.remove('fa-check-circle');
+				document.querySelector('#grupo__password2 .formulario__input-error').classList.add('formulario__input-error-activo');
+
+} else {
+				document.getElementById('grupo__password2').classList.remove('formulario__grupo-incorrecto');
+				document.getElementById('grupo__password2').classList.add('formulario__grupo-correcto');
+				document.querySelector('#grupo__password2 i').classList.remove('fa-times-circle');
+				document.querySelector('#grupo__password2 i').classList.add('fa-check-circle');
+				document.querySelector('#grupo__password2 .formulario__input-error').classList.remove('formulario__input-error-activo');
+
+}
+
 }
 
 inputs.forEach((input) => {
@@ -157,4 +205,5 @@ inputs.forEach((input) => {
 
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
+
 });
