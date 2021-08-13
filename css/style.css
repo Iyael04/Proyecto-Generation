@@ -338,7 +338,6 @@ background-image: url("../img/image7.jpg");
   background: #ffffff none repeat scroll 0 0;
   max-height: 410px;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   overflow: auto;
   padding: 20px;
   position: absolute;
@@ -353,7 +352,6 @@ background-image: url("../img/image7.jpg");
 .mine-cart-box:hover ul.mini-cart {
   visibility: visible;
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   top: 100%;
 }
 .mine-cart-box ul.mini-cart .cart-item {
