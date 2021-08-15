@@ -190,6 +190,23 @@ const validarFormulario = (e) => {
 			}
 		break;
 
+		case "password-usuario":
+			if(expresiones.password.test(e.target.value)){
+				document.getElementById('grupo__password-usuario').classList.remove('formulario__grupo-incorrecto');
+				document.getElementById('grupo__password-usuario').classList.add('formulario__grupo-correcto');
+				document.querySelector('#grupo__password-usuario i').classList.add('fa-check-circle');
+				document.querySelector('#grupo__password-usuario i').classList.remove('fa-times-circle');
+				document.querySelector('#grupo__password-usuario .formulario__input-error').classList.remove('formulario__input-error-activo');
+
+			}else{
+				document.getElementById('grupo__password-usuario').classList.add('formulario__grupo-incorrecto');
+				document.getElementById('grupo__password-usuario').classList.remove('formulario__grupo-correcto');
+				document.querySelector('#grupo__password-usuario i').classList.add('fa-times-circle');
+				document.querySelector('#grupo__password-usuario i').classList.remove('fa-check-circle');
+				document.querySelector('#grupo__password-usuario .formulario__input-error').classList.add('formulario__input-error-activo');
+			}
+		break;
+
 
 
 		case "telefono":
