@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Registar Usuario</title>
-    <!--Style Sheets-->
+    <title>Registro Usuario</title>
+
+    <!--Style-->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/simple-line-icons.css">
     <link rel="stylesheet" href="./css/icofont.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
 </head>
 <body>
     <header>
@@ -34,9 +34,9 @@
                                         <li><a href="./about_us.html">Nosotros</a></li>
                                         <li><a href="./#">Tienda<i class="icofont icofont-simple-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="products-drinks.html">Bebidas</a></li>
+                                                <li><a href="./products-drinks.html">Bebidas</a></li>
                                                 <li><a href="./food-fast.html">Comida rápida</a></li>
-                                                <li><a href="./food.html">Comida corrida</a></li>
+                                                <li><a href="./nature.html">Vegetariano</a></li>
                                                 <li><a href="./desserts.html">Postres</a></li>
                                             </ul>
                                         </li>
@@ -51,8 +51,19 @@
                                 </nav>
                             </div>
                             <div class="right-box">
-                               <div class="top-login-menu">
-                                    <div class="top-login-inner"><a href="login-register.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                <div class="mine-cart-box">
+                                    <a href="#"><i class="icon-handbag"></i><span id="checkout"> $ 0.00</span></a>
+                                    <ul class="mini-cart">
+                                        <li class="mini-cart-btns">
+                                            <div class="cart-btns">
+                                                <a href="cart.html">Ver carrito</a>
+                                                <a href="pay.html">Comprar</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-login-menu">
+                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
                                 </div>
                             </div>
                         </div>
@@ -62,50 +73,103 @@
         </div>
     </header>
 
+  <!--Section-1-->
+  <section class="section-1">
+      <div class="container col-lg-10 ">
+          <h4>Registro de nuevo Usuario</h4>
+      </div>
+  </section>
 
-<!--Register User-->
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="register-area">
-                <h2>Registro de nuevo usuario</h2>
-                <form id="formulario" action="./register-user.html" class="customer-login">
-                    <div class="formulario__grupo" id= "grupo__nombre"style="margin-bottom: 2rem;">
-                        <label for="name-profile">Nombre de usuario:<span class="required"></span></label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" id="nombre" name="nombre" placeholder="Nombre del titular" required>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>   
-                        </div>
-                        <p class="formulario__input-error">El nombre solo puede contener letras</p>     
-                    </div>
-                    <div class="formulario__grupo" id= "grupo__nombre"style="margin-bottom: 2rem;">
-                        <label for="name-profile">Descripción:<span class="required"></span></label>
-                        <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" id="description" name="nombre" placeholder="Nombre del titular" required>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>   
-                        </div>
-                        <p class="formulario__input-error">Incorrecto</p>     
-                    </div>
-
-                    <div class="formulario__grupo" id= "grupo__nombre"style="margin-bottom: 2rem;">
-                        <label for="name-profile">Correo:<span class="required"></span></label>
-                        <div class="formulario__grupo-input">
-                            <input type="email" class="formulario__input" id="correo" name="nombre" placeholder="example@dominio.com" required>
-                            <i class="formulario__validacion-estado fas fa-times-circle"></i>   
-                        </div>
-                        <p class="formulario__input-error">Incorrecto</p>     
-                    </div>
-                        <p class="formulario__input-error">Incorrecto</p>     
-                    </div>
-                    <div style="text-align: right;">
-                        <button class="submit-button" class="btn-guardar" id="btn-guardar" type="submit">Guardar</button>
-                    </div>
-                </form>
+  <section class="section-1">
+    <div class="container col-md-4 offset-md-4 ">
+        <form action="" class="formulario" id="formulario">
+            <!--Name user Group-->
+            <div class="formulario__grupo" id="grupo__nombre-usuario">
+                <label for="nombre-usuario" class="formulario__label">Nombre del Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre-usuario" id="nombre" placeholder="Ingresa el nombre del usuario">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">El nombre de usuario solo puede contener letras</p>
             </div>
+            <!--End Name User Gropu-->
+            <!--last-name Group-->
+             <div class="formulario__grupo" id="grupo__apellidos-usuario">
+                <label for="apellidos-usuario" class="formulario__label">Apellidos del usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellidos-usuario" id="apellidos-usuario" placeholder="Ingresa los apellidos del usuario">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Los apellidos del usuario solo puede contener letras</p>
+            </div>
+            <!--end last-name User-->
+              <!--e-mail Group-->
+              <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">E-mail</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="email" id="email" placeholder="Ingresa tu e-mail">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Ingresa un correo eléctronico válido</p>
+            </div>
+            <!--end e-mail Gropu-->
+
+
+            <!--telefono Group-->
+            <div class="formulario__grupo" id="grupo__telefono">
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="55 55 55 55 55">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Ingresa un teléfono válido</p>
         </div>
+        <!--end telefono Gropu-->
+
+         <!--Password 1 Group-->
+         <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Ingresa una contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" placeholder="Ingresa una contraseña">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Escoge una contraseña de 6 a 12 digítos</p>
+        </div>
+        <!--end last name Gropu-->
+
+         <!--Password_2 Group-->
+         <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repite la contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repite la contraseña">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">Las contraseñas deben ser iguales</p>
+        </div>
+        <!--end last name Gropu-->
+
+        <!-- Terminos y condiciones-->
+        <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los <a href="./terminos.html">Términos y Condiciones</a>
+            </label>
+        </div>
+
+
+            <!--Mensaje Error-->
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fas fa-exclamation-circle"></i><b>Error:</b> Por favor rellena el formulario correctamente</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Envíar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envío con correctamente</p>
+            </div>
+        </form>
     </div>
-</div>
+</section>
+
   
   <!--Footer-->
   
@@ -115,7 +179,7 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="logo">
-                        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                        <a href="./index.html"><img src="./img/logo_footer.png" alt="logo"></a>
                     </div>
                     <div class="letter">
                         <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
@@ -127,9 +191,8 @@
   </footer>
 
 <!--JS-->
-<script src="./js/register-user.js" type="text/javascript"></script>
+<script src="./js/form.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-
 
 </body>
 </html>
