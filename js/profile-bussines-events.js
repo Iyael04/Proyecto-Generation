@@ -82,3 +82,73 @@ $("#add-products").bind("submit", function() {
     }
 
 });
+
+
+
+//Cargar foto de perfil
+
+function mostrarImage() {
+    const preview = document.getElementById('selectImage');
+    const file = document.querySelector('input[type=file]').files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      // convert image file to base64 string
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+} 
+
+//Cargar fotos a galeria
+
+//FOTO 1
+function mostrarImageOne() {
+    const preview = document.getElementById('selectImage1');
+    const file = document.querySelector("#selectFile1").files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      // convert image file to base64 string
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+}
+
+//FOTO 2
+function mostrarImageTwo() {
+    const preview = document.getElementById('selectImage2');
+    const file = document.querySelector("#selectFile2").files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      // convert image file to base64 string
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+}
+
+
+//FOTO 3
+function mostrarImageThree() {
+    const preview = document.getElementById('selectImage3');
+    const file = document.querySelector("#selectFile3").files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      // convert image file to base64 string
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+}

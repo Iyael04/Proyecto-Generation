@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One|Poppins:300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+HTML, BODY, DIV, DIV, LABEL{
+  cursor: url("../img/icon-cursor.png"), auto;
+}
+
+HEADER, NAV, UL,LI, A{
+  cursor: url("../img/cursorpambazo.png"), auto;
+}
+#btn-guardar, .btn_btn-primary{
+  cursor: url("../img/cursorpambazo.png"), auto;
+ 
+}
 /* style*/
 a { -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s
