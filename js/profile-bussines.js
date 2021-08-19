@@ -6,22 +6,6 @@ const expresiones = {
 	telefono: /^\d{7,10}$/, // 7 a 10 numeros.
 	category: /^[a-zA-Z0-9\_\-]{4,10}$/, // Letras, numeros, guion y guion_bajo
 }
-<<<<<<< HEAD
-//validation.addEventListener('submit', validationProfile);
-
-phoneBusiness.addEventListener('keypress', (evento) => {
-    evento.preventDefault()
-    // console.log(event.keyCode)
-    let valorTecla = String.fromCharCode(evento.keyCode);
-    console.log(valorTecla);
-    let valorParsed = parseInt(valorTecla);
-    // console.log(valorParsed)
-    if(valorParsed) {
-      phoneBusiness.value = phoneBusiness.value + valorParsed;
-    }
-  });
-=======
->>>>>>> 52cde0c1a6ff036c20f004b22344134156be47b8
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
