@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Perfil</title>
-    <!--Style Sheets-->
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/simple-line-icons.css">
-    <link rel="stylesheet" href="./css/icofont.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"></head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+        <title>Registro Usuario</title>
+    
+        <!--Style-->
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" href="./css/simple-line-icons.css">
+        <link rel="stylesheet" href="./css/icofont.css">
+      
+    </head>
 <body class="container">
-    <header>
         <div class="header-area bg-gray">
             <div class="container"> 
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="logo">
-                            <a href="index.html"><img src="./img/logo.PNG" alt=""></a>
+                            <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
+                                <span class="logo-acera">Aceradecomida.com</span>
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-8">
@@ -51,7 +53,7 @@
                             </div>
                             <div class="right-box">
                                <div class="top-login-menu">
-                                    <div class="top-login-inner"><a href="login-register.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                    <div class="top-login-inner"><a href="login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
                                 </div>
                             </div>
                         </div>
@@ -59,8 +61,6 @@
                 </div>
             </div>
         </div>
-    </header>
-
 
 <!--Register User-->
 
@@ -148,7 +148,7 @@
                 
                 <table>
                     <tr>
-                        <td><input type="text" class="formulario__input" id="add-product" placeholder="Nombre del producto" value=""></td>
+                        <td><input type="text" class="formulario__input" id="add-product" placeholder="Nombre del producto" value="" required></td>
                         <td><input type="number" class="formulario__input" id="add-price" placeholder="Precio $0.00" value=""></td>
                     </tr>
                     <tr>
@@ -156,25 +156,25 @@
                     </tr>
                 </table>
                     
-            </form>
+                </form>
             
-            <table id="list-products">
-            </table>
+                <table id="list-products">
+                </table>
 
-            <p></p>
+                <p></p>
                 <form>
                     <p class="form-row">
                         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img id="selectImage1" class="d-block w-100" width="600" height="250"/>
-                              </div>
-                              <div class="carousel-item">
-                                <img id="selectImage2" class="d-block w-100" width="600" height="250"/>
-                              </div>
-                              <div class="carousel-item">
-                                <img id="selectImage3" class="d-block w-100" width="600" height="250"/>
-                              </div>
+                                <div class="carousel-item active">
+                                    <img id="selectImage1" class="d-block w-100" width="600" height="250"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="selectImage2" class="d-block w-100" width="600" height="250"/>
+                                </div>
+                                <div class="carousel-item">
+                                    <img id="selectImage3" class="d-block w-100" width="600" height="250"/>
+                                </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
                               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -186,22 +186,19 @@
                             </a>
                         </div>
                           
-                    </p>
-                    <p class="form-row">
-                        <label>Añade fotos a la galeria<span class="required"></span></label>
-                        <p></p>
-                        <label>Foto 1:<span class="required"></span></label>
-                        <input type="file" id="selectFile1" accept="image/*" onchange="mostrarImageOne()" class="form-control-file" style="border:0">
-                        <label>Foto 2:<span class="required"></span></label>
-                        <input type="file" id="selectFile2" accept="image/*" onchange="mostrarImageTwo()" class="form-control-file" style="border:0">
-                        <label>Foto 3:<span class="required"></span></label>
-                        <input type="file" id="selectFile3" accept="image/*" onchange="mostrarImageThree()" class="form-control-file" style="border:0">
-                    </p>
+                        </p>
+                        <p class="form-row">
+                            <label>Añade fotos a la galeria<span class="required"></span></label>
+                            <p></p>
+                            <label>Foto 1:<span class="required"></span></label>
+                            <input type="file" id="selectFile1" accept="image/*" onchange="mostrarImageOne()" class="form-control-file" style="border:0">
+                            <label>Foto 2:<span class="required"></span></label>
+                            <input type="file" id="selectFile2" accept="image/*" onchange="mostrarImageTwo()" class="form-control-file" style="border:0">
+                            <label>Foto 3:<span class="required"></span></label>
+                            <input type="file" id="selectFile3" accept="image/*" onchange="mostrarImageThree()" class="form-control-file" style="border:0">
+                        </p>
                     
-                    <p style="text-align: right;">
-                        <button class="submit-button" type="submit">Actualizar</button>
-                    </p>
-                </form>
+                    </form>
             </div>
         </div>
     </div>

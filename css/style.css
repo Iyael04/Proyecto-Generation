@@ -6,9 +6,15 @@ HTML, BODY, DIV, DIV, LABEL{
   cursor: url("../img/icon-cursor.png"), auto;
 }
 
+.logo-acera {
+  font-size:large;
+  font-family: cursive;
+}
+
 HEADER, NAV, UL,LI, A{
   cursor: url("../img/cursorpambazo.png"), auto;
 }
+
 #btn-guardar, .btn_btn-primary{
   cursor: url("../img/cursorpambazo.png"), auto;
  
