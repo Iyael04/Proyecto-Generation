@@ -1,17 +1,19 @@
 /*google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Leckerli+One|Poppins:300,400,500,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 HTML, BODY, DIV, DIV, LABEL{
   cursor: url("../img/icon-cursor.png"), auto;
 }
 
 .logo-acera {
-  font-size:large;
-  font-family: cursive;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
 }
 
-HEADER, NAV, UL,LI, A{
+
+HEADER, NAV, UL,LI, A, BUTTON{
   cursor: url("../img/cursorpambazo.png"), auto;
 }
 
@@ -19,6 +21,12 @@ HEADER, NAV, UL,LI, A{
   cursor: url("../img/cursorpambazo.png"), auto;
  
 }
+
+.formulario__btn {
+  cursor: url("../img/cursorpambazo.png"), auto;
+
+}
+/* */
 /* style*/
 a { -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s
