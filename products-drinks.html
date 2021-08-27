@@ -41,37 +41,21 @@
                                     <ul>
                                         <li><a href="index.html">Inicio</a></li>
                                         <li><a href="./about_us.html">Nosotros</a></li>
-                                        <li><a href="./#">Tienda<i class="icofont icofont-simple-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="./products-drinks.html">Bebidas</a></li>
-                                                <li><a href="./food-fast.html">Comida rápida</a></li>
-                                                <li><a href="./nature.html">Vegetariano</a></li>
-                                                <li><a href="./desserts.html">Postres</a></li>
-                                            </ul>
+                                        <li id="shop-list">
+
                                         </li>
-                                        <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="./register-user.html">Soy usuario</a></li>
-                                                <li><a href="./register-bussines.html">Soy comercio</a></li>
-                                            </ul>
+                                        <li id="register">
+                                            
                                         </li>
                                         <li><a href="./contact-us.html"> Contáctanos</a></li>
                                     </ul>
                                 </nav>
                             </div>
                             <div class="right-box">
-                                <div class="mine-cart-box">
-                                    <a href="#"><i class="icon-handbag"></i><span id="checkout"> $ 0.00</span></a>
-                                    <ul class="mini-cart">
-                                        <li class="mini-cart-btns">
-                                            <div class="cart-btns">
-                                                <a href="cart.html">Ver carrito</a>
-                                                <a href="pay.html">Comprar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="mine-cart-box" id="icon-handbag">
+                                    
                                 </div>
-                                <div class="top-login-menu">
+                                <div class="top-login-menu" id="sesion">
                                     <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
                                 </div>
                             </div>
@@ -114,7 +98,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn_btn-primary" onclick="add('jugodenaranja', 20.00)">Agregar</button>
+                                        <button type="button" class="btn_btn-primary" onclick="add('jugodenaranja', 20.00), alerta()">Agregar</button>
                                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                     </div>
                                 </div>
@@ -150,7 +134,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('tehelado ', 20.00)">Agregar</button>
+                                    <button type="button" class="btn_btn-primary" onclick="add('tehelado ', 20.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -186,7 +170,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('cafedeolla', 12.00)">Agregar</button>
+                                    <button type="button" class="btn_btn-primary" onclick="add('cafedeolla', 12.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -222,7 +206,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('atoledechocolate',12.00)">Agregar</button>
+                                    <button type="button" class="btn_btn-primary" onclick="add('atoledechocolate',12.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -258,7 +242,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('caguamaleon', 40.00)">Agregar</button>
+                                    <button type="button" class="btn_btn-primary" onclick="add('caguamaleon', 40.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -294,7 +278,7 @@
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('licuadodefresa', 25.00)">Agregar</button>
+                                    <button type="button" class="btn_btn-primary" onclick="add('licuadodefresa', 25.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
@@ -340,6 +324,9 @@
           </div>
       </div>
   </footer>
+  <script src="./js/header.js"></script>
+  <script src="./js/alerts.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
   <script src="./js/add.js"></script>
 </body>

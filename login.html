@@ -34,13 +34,8 @@
                                     <ul>
                                         <li><a href="index.html">Inicio</a></li>
                                         <li><a href="./about_us.html">Nosotros</a></li>
-                                        <li><a href="./#">Tienda<i class="icofont icofont-simple-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="./products-drinks.html">Bebidas</a></li>
-                                                <li><a href="./food-fast.html">Comida rápida</a></li>
-                                                <li><a href="./nature.html">Vegetariano</a></li>
-                                                <li><a href="./desserts.html">Postres</a></li>
-                                            </ul>
+                                        <li id="shop-list">
+
                                         </li>
                                         <li><a href="#">Registrarme<i class="icofont icofont-simple-down"></i></a>
                                             <ul class="sub-menu">
@@ -53,19 +48,11 @@
                                 </nav>
                             </div>
                             <div class="right-box">
-                                <div class="mine-cart-box">
-                                    <a href="#"><i class="icon-handbag"></i><span id="checkout"> $ 0.00</span></a>
-                                    <ul class="mini-cart">
-                                        <li class="mini-cart-btns">
-                                            <div class="cart-btns">
-                                                <a href="cart.html">Ver carrito</a>
-                                                <a href="pay.html">Comprar</a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="mine-cart-box" id="icon-handbag">
+                                    
                                 </div>
-                                <div class="top-login-menu">
-                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                <div class="top-login-menu" id="sesion">
+                                    
                                 </div>
                             </div>
                         </div>
@@ -90,12 +77,12 @@
 
 <section class="section-1">
     <div class="container col-md-4 offset-md-4 ">
-        <form action="" class="formulario" id="formulario">
+        <form class="formulario" id="formulario">
               <!--e-mail Group-->
               <div class="formulario__grupo" id="grupo__email">
                 <label for="email" class="formulario__label">E-mail</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="email" id="email" placeholder="Ingresa tu e-mail">
+                    <input type="text" class="formulario__input" name="email" id="email" placeholder="Ingresa tu e-mail" required>
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
                 <p class="formulario__input-error">Ingresa un correo eléctronico válido</p>
@@ -106,7 +93,7 @@
          <div class="formulario__grupo" id="grupo__password-usuario">
             <label for="password-usuario" class="formulario__label">Ingresa tu contraseña</label>
             <div class="formulario__grupo-input">
-                <input type="password" class="formulario__input" name="password-usuario" id="password-usuario" placeholder="Ingresa tu contraseña">
+                <input type="password" class="formulario__input" name="password-usuario" id="password-usuario" placeholder="Ingresa tu contraseña" required>
                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
             <p class="formulario__input-error">Ingresa tu contraseña de 6 a 12 digítos</p>
@@ -153,6 +140,7 @@
   </footer>
 
 <!--JS-->
+<script src="./js/login-user.js"></script>
 <script src="./js/form.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 
