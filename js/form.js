@@ -233,8 +233,9 @@ const validarFormulario = (e) => {
 }
 
 const validarPassword2 = () =>{
-	const inputPassword1 = document.getElementById('password');
 	const inputPassword2 = document.getElementById('password2');
+	const inputPassword1 = document.getElementById('password');
+	
 
 if (inputPassword1.value !== inputPassword2.value){
 				document.getElementById('grupo__password2').classList.add('formulario__grupo-incorrecto');
@@ -259,7 +260,46 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
+// Example POST method implementation:
+async function postData(url = '', data = {}) {
+	// Default options are marked with *
+	const response = await fetch(url, {
+	  method: 'POST', // *GET, POST, PUT, DELETE, etc.
+	  mode: 'cors', // no-cors, *cors, same-origin
+	  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+	  credentials: 'same-origin', // include, *same-origin, omit
+	  headers: {
+		'Content-Type': 'application/json'
+		// 'Content-Type': 'application/x-www-form-urlencoded',
+	  },
+	  body: JSON.stringify(data) // body data type must match "Content-Type" header
+	});
+	console.log(response);
+	return response; // parses JSON response into native JavaScript objects
+}
+  
+
+  
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
+	const url = "http://localhost:8080/api/aceradecomida/";
+	const name = document.getElementById('nombre').value;
+	const email = document.getElementById('email').value;
+	const password = document.getElementById('password').value;
+console.log(name,password,email);
+	const newuser={
+		username : name,
+		email : email, 
+		password : password
+	};
+	postData(url, newuser)
+	.then(data => {
+		console.log(data);
+		if (data.status===200){
 
+			console.log("Registro Exitoaso"); // JSON data parsed by `data.json()` call
+		}else{
+			console.log("Registro Fallido"); // JSON data parsed by `data.json()` call
+		}
+	});
 });
