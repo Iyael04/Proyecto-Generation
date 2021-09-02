@@ -3,9 +3,9 @@ const header2 = document.getElementById('register');
 const header3 = document.getElementById('shop-list');
 const header4 = document.getElementById('icon-handbag');
 
-let username = JSON.parse(localStorage.getItem('user'));
+let respuesta = JSON.parse(localStorage.getItem('continuar'));
 
-if(username != null) {
+if(respuesta != undefined) {
     header.innerHTML = `<div class="top-login-inner"><a href="./index.html"><i class="icon-user"></i> <span class="user-login">Cerrar sesión</span> </a></div>`;
 
     header3.innerHTML = `<a href="./#">Tienda<i class="icofont icofont-simple-down"></i></a>
@@ -37,6 +37,6 @@ if(username != null) {
 }
 
 header.addEventListener('click', function() {
-    localStorage.clear('user');
+    localStorage.clear('continuar');
     location.href = 'index.html';
 });
