@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +18,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    
-    
-   
+
+
+
 
 </head>
+
 <body>
     <header>
         <div class="header-area bg-gray">
-            <div class="container"> 
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="logo">
@@ -45,7 +47,7 @@
 
                                         </li>
                                         <li id="register">
-                                            
+
                                         </li>
                                         <li><a href="./contact-us.html"> Contáctanos</a></li>
                                     </ul>
@@ -53,10 +55,11 @@
                             </div>
                             <div class="right-box">
                                 <div class="mine-cart-box" id="icon-handbag">
-                                    
+
                                 </div>
                                 <div class="top-login-menu" id="sesion">
-                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span
+                                                class="user-login">Login</span> </a></div>
                                 </div>
                             </div>
                         </div>
@@ -65,270 +68,307 @@
             </div>
         </div>
     </header>
-  
-  <!--Section-1-->
 
- <section class="section-1">
-     <div class="page-content">
-         <!--Jugo de naranja-->
-         <div class="product-container col-sm-4 card">
+    <!--Section-1-->
+
+    <section class="section-1">
+        <div class="page-content">
+            <!--Jugo de naranja-->
+            <div class="product-container col-sm-4 card">
                 <img src="./img_drinks/img_01.jpeg" width="200" height="400">
                 <div class="description">
                     <h4><b>Jugo de Naranja</b></h4>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#jugodenaranjaModal">Ver detalles</button>
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#jugodenaranjaModal">Ver detalles</button>
                     <!-- jugo de naranja Modal -->
-                    <div class="modal fade" id="jugodenaranjaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"><b>Jugo de Naranja</b></h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal fade" id="jugodenaranjaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Jugo de Naranja</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body" style="align-content: center">
-                                        <img class="zoom" src="./img_drinks/img_01.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
-                                        <div class="ratings">
-                                            <p>Jugo de naranja natural</p>
-                                            <span class="product-rating">$ 20.00</span>
-                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                            <div class="rating-text"> <span>46 opiniones</span> </div>
-                                            <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="align-content: center">
+                                    <img class="zoom" src="./img_drinks/img_01.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <div class="ratings">
+                                        <p>Jugo de naranja natural</p>
+                                        <span class="product-rating">$ 20.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn_btn-primary" onclick="add('jugodenaranja', 20.00), alerta()">Agregar</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('jugodenaranja', 20.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
-                    </div>    
+                        </div>
+                    </div>
                 </div>
-         </div>
-         <!--Te helado-->
-         <div class="product-container col-sm-4 card">
-            <img src="./img_drinks/img_02.jpeg" width="200" height="400">
-            <div class="description">
-                <h4><b>Té helado</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#teheladoModal">Ver detalles</button>
-                <!-- teheladoModal -->
-                <div class="modal fade" id="teheladoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            </div>
+            <!--Te helado-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_drinks/img_02.jpeg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Té helado</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#teheladoModal">Ver
+                        detalles</button>
+                    <!-- teheladoModal -->
+                    <div class="modal fade" id="teheladoModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Té helado</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_drinks/img_02.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_drinks/img_02.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Té helado de jengibre con limon.</p>
                                         <span class="product-rating">$ 20.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('tehelado ', 20.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('tehelado ', 20.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-         </div>
-        <!--Café-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_drinks/img_03.jpeg" width="200" height="400">
-            <div class="description">
-                <h4><b>Café de olla</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#cafedeollaModal">Ver detalles</button>
-                <!-- cafedeollaModal -->
-                <div class="modal fade" id="cafedeollaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--Café-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_drinks/img_03.jpeg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Café de olla</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#cafedeollaModal">Ver
+                        detalles</button>
+                    <!-- cafedeollaModal -->
+                    <div class="modal fade" id="cafedeollaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Café de olla</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_drinks/img_03.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_drinks/img_03.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Café de olla endulzado con azuar</p>
                                         <span class="product-rating">$ 12.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('cafedeolla', 12.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('cafedeolla', 12.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--Atole de Chocolate-->
-        <div class="product-container col-sm-4 card">
-            <img src="img_drinks/img_04.jpeg" width="200" height="400">
-            <div class="description">
-                <h4><b>Atole de Chocolate</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#atoledechocolateModal">Ver detalles</button>
-                <!-- 'BrownieModal -->
-                <div class="modal fade" id="atoledechocolateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--Atole de Chocolate-->
+            <div class="product-container col-sm-4 card">
+                <img src="img_drinks/img_04.jpeg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Atole de Chocolate</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#atoledechocolateModal">Ver detalles</button>
+                    <!-- 'BrownieModal -->
+                    <div class="modal fade" id="atoledechocolateModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Atole de Chocolate</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="img_drinks/img_04.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="img_drinks/img_04.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Atole de chocolate caliente</p>
                                         <span class="product-rating">$12.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('atoledechocolate',12.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('atoledechocolate',12.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--Caguama leon-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_drinks/img_05.jpeg" width="200" height="400">
-            <div class="description">
-                <h4><b>Caguama Corona</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#caguamaleonModal">Ver detalles</button>
-                <!-- donasModal -->
-                <div class="modal fade" id="caguamaleonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--Caguama leon-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_drinks/img_05.jpeg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Caguama Corona</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#caguamaleonModal">Ver detalles</button>
+                    <!-- donasModal -->
+                    <div class="modal fade" id="caguamaleonModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Caguama León</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_drinks/img_05.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_drinks/img_05.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Caguama Corona bien fría.</p>
                                         <span class="product-rating">$40.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('caguamaleon', 40.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('caguamaleon', 40.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--Licuado de Fresa-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_drinks/img_06.jpeg" width="200" height="400">
-            <div class="description">
-                <h4><b>Licuado de Fresa</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#licuadodefresaModal">Ver detalles</button>
-                <!-- gelatinasModal -->
-                <div class="modal fade" id="licuadodefresaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--Licuado de Fresa-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_drinks/img_06.jpeg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Licuado de Fresa</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#licuadodefresaModal">Ver detalles</button>
+                    <!-- gelatinasModal -->
+                    <div class="modal fade" id="licuadodefresaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Licuado de Fresa</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_drinks/img_06.jpeg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_drinks/img_06.jpeg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Licuado de fresa 100% natural.</p>
                                         <span class="product-rating">$25.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('licuadodefresa', 25.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('licuadodefresa', 25.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
-            </div>
-        </div>
-    </div>
- </section>
-
-  <!--Banner-->
-  <section class="bg-img-1">
-      <section class="parallax-container" data-parallax-img="img/image7.jpg">
-        <div class="parallac-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 banner">
-                        <h4 class="text-italic2">Entrega a domiclio</h4>
-                        <h4 class="text-italic2">Gratuita</h4>
-                        <h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  </section>
-  
-  <!--Footer-->
-  
-  <footer class="page-foot text-left">
-      <div class="bg-gray-darker footer-area" >
-          <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="logo">
-                        <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
-                    </div>
-                    <div class="letter">
-                        <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
-                        <p>E-mail: <span class="page-foot">correo@electronico.com</span></p>
+
+    <!--Banner-->
+    <section class="bg-img-1">
+        <section class="parallax-container" data-parallax-img="img/image7.jpg">
+            <div class="parallac-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 banner">
+                            <h4 class="text-italic2">Entrega a domiclio</h4>
+                            <h4 class="text-italic2">Gratuita</h4>
+                            <h4>
+                        </div>
                     </div>
                 </div>
-          </div>
-      </div>
-  </footer>
-  <script src="./js/header.js"></script>
-  <script src="./js/alerts.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-  <script src="./js/add.js"></script>
+            </div>
+        </section>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="page-foot text-left">
+        <div class="bg-gray-darker footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
+                        </div>
+                        <div class="letter">
+                            <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del
+                                    Sol, 44510 Guadalajara, Jal.</span></p>
+                            <p>E-mail: <span class="page-foot">contacto@aceradecomida.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="./js/header.js"></script>
+    <script src="./js/alerts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="./js/add.js"></script>
 </body>
-    
+
 </html>

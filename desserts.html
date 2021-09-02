@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,15 +18,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/style.css">
-    
-    
-   
+
+
+
 
 </head>
+
 <body>
     <header>
         <div class="header-area bg-gray">
-            <div class="container"> 
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
                         <div class="logo">
@@ -45,7 +47,7 @@
 
                                         </li>
                                         <li id="register">
-                                            
+
                                         </li>
                                         <li><a href="./contact-us.html"> Contáctanos</a></li>
                                     </ul>
@@ -53,10 +55,11 @@
                             </div>
                             <div class="right-box">
                                 <div class="mine-cart-box" id="icon-handbag">
-                                    
+
                                 </div>
                                 <div class="top-login-menu" id="sesion">
-                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span class="user-login">Login</span> </a></div>
+                                    <div class="top-login-inner"><a href="./login.html"><i class="icon-user"></i> <span
+                                                class="user-login">Login</span> </a></div>
                                 </div>
                             </div>
                         </div>
@@ -65,270 +68,307 @@
             </div>
         </div>
     </header>
-  
-  <!--Section-1-->
 
- <section class="section-1">
-     <div class="page-content">
-         <!--Rollos De Cajeta-->
-         <div class="product-container col-sm-4 card">
+    <!--Section-1-->
+
+    <section class="section-1">
+        <div class="page-content">
+            <!--Rollos De Cajeta-->
+            <div class="product-container col-sm-4 card">
                 <img src="/img_postres/img-01.jpg" width="200" height="400">
                 <div class="description">
                     <h4><b>Rollos de Cajeta</b></h4>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#rollosDeCajetaModal">Ver detalles</button>
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#rollosDeCajetaModal">Ver detalles</button>
                     <!-- rollosDeCajetaModal -->
-                    <div class="modal fade" id="rollosDeCajetaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel"><b>Rollos de Cajeta</b></h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal fade" id="rollosDeCajetaModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><b>Rollos de Cajeta</b></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body" style="align-content: center">
-                                        <img class="zoom" src="./img_postres/img-01.jpg" style="width: 100%; margin-left: 12.5%;"><br><br>
-                                        <div class="ratings">
-                                            <p>Rollos de harina rellenos de cajeta quemada .</p>
-                                            <span class="product-rating">$ 50.00</span>
-                                            <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
-                                            <div class="rating-text"> <span>46 opiniones</span> </div>
-                                            <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                    </button>
+                                </div>
+                                <div class="modal-body" style="align-content: center">
+                                    <img class="zoom" src="./img_postres/img-01.jpg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <div class="ratings">
+                                        <p>Rollos de harina rellenos de cajeta quemada .</p>
+                                        <span class="product-rating">$ 50.00</span>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="rating-text"> <span>46 opiniones</span> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
                                         </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn_btn-primary" onclick="add('rollosDeCajeta', 50.00), alerta()">Agregar</button>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('rollosDeCajeta', 50.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
-                    </div>    
+                        </div>
+                    </div>
                 </div>
-         </div>
-         <!--Pay De Queso-->
-         <div class="product-container col-sm-4 card">
-            <img src="./img_postres/img-02.jpg" width="200" height="400">
-            <div class="description">
-                <h4><b>Pay de Queso</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#payDeQuesoModal">Ver detalles</button>
-                <!-- payDeQuesoModal -->
-                <div class="modal fade" id="payDeQuesoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            </div>
+            <!--Pay De Queso-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_postres/img-02.jpg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Pay de Queso</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#payDeQuesoModal">Ver
+                        detalles</button>
+                    <!-- payDeQuesoModal -->
+                    <div class="modal fade" id="payDeQuesoModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Pay De Queso</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_postres/img-02.jpg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_postres/img-02.jpg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Base de galleta con cubierta de queso.</p>
                                         <span class="product-rating">$ 45.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('payDeQueso ', 45.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('payDeQueso ', 45.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-         </div>
-        <!--Pastel de Chocolate-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_postres/img-03.png" width="200" height="400">
-            <div class="description">
-                <h4><b>Pastel De Chocolate</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#pastelDeChocolateModal">Ver detalles</button>
-                <!-- pastelDeChocolateModal -->
-                <div class="modal fade" id="pastelDeChocolateModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--Pastel de Chocolate-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_postres/img-03.png" width="200" height="400">
+                <div class="description">
+                    <h4><b>Pastel De Chocolate</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal"
+                        data-target="#pastelDeChocolateModal">Ver detalles</button>
+                    <!-- pastelDeChocolateModal -->
+                    <div class="modal fade" id="pastelDeChocolateModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Pastel De Chocolate</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_postres/img-03.png" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_postres/img-03.png"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Pastel de chocolate, con cubierta de chocolate amargo y trozos de nuez.</p>
                                         <span class="product-rating">$ 40.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('pastelDeChocolate', 40.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('pastelDeChocolate', 40.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--'Brownie Espacial-->
-        <div class="product-container col-sm-4 card">
-            <img src="img_postres/img-04.jpg" width="200" height="400">
-            <div class="description">
-                <h4><b>Brownie Espacial</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#brownieModal">Ver detalles</button>
-                <!-- 'BrownieModal -->
-                <div class="modal fade" id="brownieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--'Brownie Espacial-->
+            <div class="product-container col-sm-4 card">
+                <img src="img_postres/img-04.jpg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Brownie Espacial</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#brownieModal">Ver
+                        detalles</button>
+                    <!-- 'BrownieModal -->
+                    <div class="modal fade" id="brownieModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Brownie Especial</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="img_postres/img-04.jpg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="img_postres/img-04.jpg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Brownie con chispas de chocolate o con chispas de chocomenta</p>
                                         <span class="product-rating">$130.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('brownie espacial',130.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('brownie espacial',130.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--donas-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_postres/img-05.jpg" width="200" height="400">
-            <div class="description">
-                <h4><b>Donas</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#donasModal">Ver detalles</button>
-                <!-- donasModal -->
-                <div class="modal fade" id="donasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--donas-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_postres/img-05.jpg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Donas</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#donasModal">Ver
+                        detalles</button>
+                    <!-- donasModal -->
+                    <div class="modal fade" id="donasModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Donas</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_postres/img-05.jpg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_postres/img-05.jpg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Donas cubierta de chocolate de frasa o amargo con trozos de nuez.</p>
                                         <span class="product-rating">$20.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('donas', 20.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('donas', 20.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
+                    </div>
+                </div>
             </div>
-        </div>
-        <!--gelatinas-->
-        <div class="product-container col-sm-4 card">
-            <img src="./img_postres/img-06.jpg" width="200" height="400">
-            <div class="description">
-                <h4><b>Gelatinas</b></h4>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#gelatinasModal">Ver detalles</button>
-                <!-- gelatinasModal -->
-                <div class="modal fade" id="gelatinasModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <!--gelatinas-->
+            <div class="product-container col-sm-4 card">
+                <img src="./img_postres/img-06.jpg" width="200" height="400">
+                <div class="description">
+                    <h4><b>Gelatinas</b></h4>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn_btn-primary" data-toggle="modal" data-target="#gelatinasModal">Ver
+                        detalles</button>
+                    <!-- gelatinasModal -->
+                    <div class="modal fade" id="gelatinasModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h5 class="modal-title" id="exampleModalLabel"><b>Gelatinas</b></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body" style="align-content: center">
-                                    <img class="zoom" src="./img_postres/img-06.jpg" style="width: 100%; margin-left: 12.5%;"><br><br>
+                                    <img class="zoom" src="./img_postres/img-06.jpg"
+                                        style="width: 100%; margin-left: 12.5%;"><br><br>
                                     <div class="ratings">
                                         <p>Gelatinas de leche y de agua de varios sabores.</p>
                                         <span class="product-rating">$25.00</span>
-                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
+                                        <div class="stars"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                                class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
                                         <div class="rating-text"> <span>46 opiniones</span> </div>
-                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a> </div>
+                                        <div class="vendedor-text"> <span>Vendedor 1</span> <a href="#">Más Info</a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn_btn-primary" onclick="add('Gelatinas', 25.00), alerta()">Agregar</button>
+                                    <button type="button" class="btn_btn-primary"
+                                        onclick="add('Gelatinas', 25.00), alerta()">Agregar</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                                 </div>
                             </div>
                         </div>
-                </div>    
-            </div>
-        </div>
-    </div>
- </section>
-
-  <!--Banner-->
-  <section class="bg-img-1">
-      <section class="parallax-container" data-parallax-img="img/image7.jpg">
-        <div class="parallac-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 banner">
-                        <h4 class="text-italic2">Entrega a domiclio</h4>
-                        <h4 class="text-italic2">Gratuita</h4>
-                        <h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  </section>
-  
-  <!--Footer-->
-  
-  <footer class="page-foot text-left">
-      <div class="bg-gray-darker footer-area" >
-          <div class="container">
-              <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="logo">
-                        <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
-                    </div>
-                    <div class="letter">
-                        <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del Sol, 44510 Guadalajara, Jal.</span></p>
-                        <p>E-mail: <span class="page-foot">correo@electronico.com</span></p>
+
+    <!--Banner-->
+    <section class="bg-img-1">
+        <section class="parallax-container" data-parallax-img="img/image7.jpg">
+            <div class="parallac-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 banner">
+                            <h4 class="text-italic2">Entrega a domiclio</h4>
+                            <h4 class="text-italic2">Gratuita</h4>
+                            <h4>
+                        </div>
                     </div>
                 </div>
-          </div>
-      </div>
-  </footer>
-  <script src="./js/header.js"></script>
-  <script src="./js/alerts.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
-  <script src="./js/add.js"></script>
+            </div>
+        </section>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="page-foot text-left">
+        <div class="bg-gray-darker footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="logo">
+                            <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
+                        </div>
+                        <div class="letter">
+                            <p>Dirección: <span class="page-foot">Av. Adolfo López Mateos Sur 2077, Jardines Plaza del
+                                    Sol, 44510 Guadalajara, Jal.</span></p>
+                            <p>E-mail: <span class="page-foot">contacto@aceradecomida.com</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="./js/header.js"></script>
+    <script src="./js/alerts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="./js/add.js"></script>
 </body>
-    
+
 </html>

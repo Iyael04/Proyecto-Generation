@@ -1,21 +1,20 @@
-
 let obtenerData = localStorage.getItem("obtenerData");
 let operation = "add";
 obtenerData = JSON.parse(obtenerData);
-if (obtenerData === null){
-    obtenerData = [];
+if (obtenerData === null) {
+  obtenerData = [];
 }
 
-function addProducts () {
-    let dataProducts = JSON.stringify({
-        Producto : $("#add-product").val(),
-        Price : $("#add-price").val(),
-    });
+function addProducts() {
+  let dataProducts = JSON.stringify({
+    Producto: $("#add-product").val(),
+    Price: $("#add-price").val(),
+  });
 
-    obtenerData.push(dataProducts);
-    localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
+  obtenerData.push(dataProducts);
+  localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
 
-    listProductos();
+  listProductos();
 }
 
 // function listProductos (){
@@ -44,111 +43,122 @@ function addProducts () {
 
 listProductos();
 
-function eraseData(e){
-    obtenerData.splice(e, 1);
-    localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
+function eraseData(e) {
+  obtenerData.splice(e, 1);
+  localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
 }
 
 function editData() {
-    obtenerData[i_select] = JSON.stringify({
-        Producto : $("#add-product").val(),
-        Price : $("#add-price").val(),
-    });
-    localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
-    operation = "add";
-    return true;
+  obtenerData[i_select] = JSON.stringify({
+    Producto: $("#add-product").val(),
+    Price: $("#add-price").val(),
+  });
+  localStorage.setItem("obtenerData", JSON.stringify(obtenerData));
+  operation = "add";
+  return true;
 }
 
-$(".btnEliminar").bind("click", function(){
-    i_select = $(this).attr("id");
-    eraseData(i_select);
-    listProductos();
+$(".btnEliminar").bind("click", function () {
+  i_select = $(this).attr("id");
+  eraseData(i_select);
+  listProductos();
 });
 
-$(".btnEditar").bind("click", function() {
-    operation = "edit";
-    i_select = $(this).attr("id");
-    let addProducts = JSON.parse(obtenerData[i_select]);
-    $("#add-product").val(addProducts.Producto);
-    $("#add-price").val(addProducts.Price);
-    $("#add-product").focus();
+$(".btnEditar").bind("click", function () {
+  operation = "edit";
+  i_select = $(this).attr("id");
+  let addProducts = JSON.parse(obtenerData[i_select]);
+  $("#add-product").val(addProducts.Producto);
+  $("#add-price").val(addProducts.Price);
+  $("#add-product").focus();
 });
 
-$("#add-products").bind("submit", function() {    
-    if (operation == "add")
-        return addProducts();
-    else {
-        return editData();
-    }
-
+$("#add-products").bind("submit", function () {
+  if (operation == "add") return addProducts();
+  else {
+    return editData();
+  }
 });
-
-
 
 //Cargar foto de perfil
 
 function mostrarImage() {
-    const preview = document.getElementById('selectImage');
-    const file = document.querySelector('input[type=file]').files[0];
-    const reader = new FileReader();
-  
-    reader.addEventListener("load", function () {
+  const preview = document.getElementById("selectImage");
+  const file = document.querySelector("input[type=file]").files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener(
+    "load",
+    function () {
       // convert image file to base64 string
       preview.src = reader.result;
-    }, false);
-  
-    if (file) {
-      reader.readAsDataURL(file);
-    }
-} 
+    },
+    false
+  );
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
 
 //Cargar fotos a galeria
 
 //FOTO 1
 function mostrarImageOne() {
-    const preview = document.getElementById('selectImage1');
-    const file = document.querySelector("#selectFile1").files[0];
-    const reader = new FileReader();
-  
-    reader.addEventListener("load", function () {
+  const preview = document.getElementById("selectImage1");
+  const file = document.querySelector("#selectFile1").files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener(
+    "load",
+    function () {
       // convert image file to base64 string
       preview.src = reader.result;
-    }, false);
-  
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+    },
+    false
+  );
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
 }
 
 //FOTO 2
 function mostrarImageTwo() {
-    const preview = document.getElementById('selectImage2');
-    const file = document.querySelector("#selectFile2").files[0];
-    const reader = new FileReader();
-  
-    reader.addEventListener("load", function () {
+  const preview = document.getElementById("selectImage2");
+  const file = document.querySelector("#selectFile2").files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener(
+    "load",
+    function () {
       // convert image file to base64 string
       preview.src = reader.result;
-    }, false);
-  
-    if (file) {
-      reader.readAsDataURL(file);
-    }
-}
+    },
+    false
+  );
 
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
 
 //FOTO 3
 function mostrarImageThree() {
-    const preview = document.getElementById('selectImage3');
-    const file = document.querySelector("#selectFile3").files[0];
-    const reader = new FileReader();
-  
-    reader.addEventListener("load", function () {
+  const preview = document.getElementById("selectImage3");
+  const file = document.querySelector("#selectFile3").files[0];
+  const reader = new FileReader();
+
+  reader.addEventListener(
+    "load",
+    function () {
       // convert image file to base64 string
       preview.src = reader.result;
-    }, false);
-  
-    if (file) {
-      reader.readAsDataURL(file);
-    }
+    },
+    false
+  );
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
 }
