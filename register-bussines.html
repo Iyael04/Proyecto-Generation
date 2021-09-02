@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Registro Usuario</title>
+    <title>Registro Comercio</title>
 
     <!--Style-->
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/simple-line-icons.css">
     <link rel="stylesheet" href="./css/icofont.css">
-  
 </head>
 <body>
     <header>
@@ -21,7 +20,7 @@
             <div class="container"> 
                 <div class="row">
                     <div class="col-lg-3 col-md-4">
-                        <div class="logo">
+                        <div class="logo" class="header-main-content">
                             <a href="index.html"><img src="./img/logoAcera.png" alt="" width="80" height="80">
                                 <span class="logo-acera">Aceradecomida.com</span>
                             </a>
@@ -59,36 +58,37 @@
         </div>
     </header>
 
+
   <!--Section-1-->
   <section class="section-1">
       <div class="container col-lg-10 ">
-          <h4>Registro de nuevo Usuario</h4>
+          <h4>Registro de nuevo Comercio</h4>
       </div>
   </section>
 
   <section class="section-1">
     <div class="container col-md-4 offset-md-4 ">
-        <form action="./index.html" class="formulario" id="formulario">
-            <!--Name user Group-->
-            <div class="formulario__grupo" id="grupo__nombre-usuario">
-                <label for="nombre-usuario" class="formulario__label">Nombre del Usuario</label>
+        <form action="./profile-business.html" class="formulario" id="formulario">
+            <!--Name Bussines Group-->
+            <div class="formulario__grupo" id="grupo__nombre-comercio">
+                <label for="nombre-comercio" class="formulario__label">Nombre del Comercio</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="nombre-usuario" id="nombre" placeholder="Ingresa el nombre del usuario">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingresa el nombre del comercio">
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
-                <p class="formulario__input-error">El nombre de usuario solo puede contener letras</p>
+                <p class="formulario__input-error">El nombre solo puede contener letras</p>
             </div>
-            <!--End Name User Gropu-->
-            <!--last-name Group-->
-             <div class="formulario__grupo" id="grupo__apellidos-usuario">
-                <label for="apellidos-usuario" class="formulario__label">Apellidos del usuario</label>
+            <!--End Name Bussines Gropu-->
+            <!--last name Group-->
+             <div class="formulario__grupo" id="grupo__titular">
+                <label for="titular" class="formulario__label">Nombre del titular</label>
                 <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="apellidos-usuario" id="apellidos-usuario" placeholder="Ingresa los apellidos del usuario">
+                    <input type="text" class="formulario__input" name="titular" id="titular" placeholder="Ingresa el nombre completo del responsable del comercio">
                     <i class="formulario__validacion-estado fas fa-times-circle"></i>
                 </div>
-                <p class="formulario__input-error">Los apellidos del usuario solo puede contener letras</p>
+                <p class="formulario__input-error">El nombre del titular solo puede contener letras</p>
             </div>
-            <!--end last-name User-->
+            <!--end last name Gropu-->
               <!--e-mail Group-->
               <div class="formulario__grupo" id="grupo__email">
                 <label for="email" class="formulario__label">E-mail</label>
@@ -99,48 +99,56 @@
                 <p class="formulario__input-error">Ingresa un correo eléctronico válido</p>
             </div>
             <!--end e-mail Gropu-->
-
-
-            <!--telefono Group-->
+            <!--Telefono Group-->
             <div class="formulario__grupo" id="grupo__telefono">
-                <label for="telefono" class="formulario__label">Teléfono</label>
-                <div class="formulario__grupo-input">
-                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="55 55 55 55 55">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Ingresa un teléfono válido</p>
+            <label for="telefono" class="formulario__label">Teléfono</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="55 55 55 55 55">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
-            <!--end telefono Gropu-->
+            <p class="formulario__input-error">Ingresa un teléfono válido</p>
+        </div>
+        <!--end e-mail Gropu-->
 
-            <!--Password 1 Group-->
-            <div class="formulario__grupo" id="grupo__password">
-                <label for="password" class="formulario__label">Ingresa una contraseña</label>
-                <div class="formulario__grupo-input">
-                    <input type="password" class="formulario__input" name="password" id="password" placeholder="Ingresa una contraseña">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Escoge una contraseña de 6 a 12 digítos</p>
+         <!--Password 1 Group-->
+         <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Ingresa una contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password" id="password" placeholder="Ingresa una contraseña">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
-            <!--end last name Gropu-->
+            <p class="formulario__input-error">Escoge una contraseña de 4 a 8 digítos</p>
+        </div>
+        <!--end last name Gropu-->
 
-            <!--Password_2 Group-->
-            <div class="formulario__grupo" id="grupo__password2">
-                <label for="password2" class="formulario__label">Repite la contraseña</label>
-                <div class="formulario__grupo-input">
-                    <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repite la contraseña">
-                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
-                </div>
-                <p class="formulario__input-error">Las contraseñas deben ser iguales</p>
+         <!--Password_2 Group-->
+         <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label">Repite la contraseña</label>
+            <div class="formulario__grupo-input">
+                <input type="password" class="formulario__input" name="password2" id="password2" placeholder="Repite la contraseña">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
             </div>
-            <!--end last name Gropu-->
+            <p class="formulario__input-error">Las contraseñas deben ser iguales</p>
+        </div>
+        <!--end last name Gropu-->
+        <!--Localitation Group-->
+        <div class="formulario__grupo" id="grupo__localizacion-comercio">
+            <label for="localizacion-comercio" class="formulario__label">localización del Comercio</label>
+            <div class="formulario__grupo-input">
+                <input type="text" class="formulario__input" name="localizacion-comercio" id="localizacion" placeholder="Ingresa la localización del comercio">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">La localización solo puede contener letras</p>
+        </div>
+        <!--End localitation Gropu-->
 
-            <!-- Terminos y condiciones-->
-            <div class="formulario__grupo" id="grupo__terminos">
-                <label class="formulario__label">
-                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
-                    Acepto los <a href="./terminos.html">Términos y Condiciones</a>
-                </label>
-            </div>
+        <!-- Terminos y condiciones-->
+        <div class="formulario__grupo" id="grupo__terminos">
+            <label class="formulario__label">
+                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                Acepto los <a href="./terminos.html">Términos y Condiciones</a>
+            </label>
+        </div>
 
 
             <!--Mensaje Error-->
@@ -149,7 +157,6 @@
             </div>
 
             <button type="submit" class="formulario__btn"><a href="#"></a>Enviar</a></button>
-            
             
         </form>
     </div>
@@ -177,7 +184,7 @@
 
 <!--JS-->
 <script src="./js/header.js"></script>
-<script src="./js/form.js"></script>
+<script src="./js/form seller.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
 
 </body>
