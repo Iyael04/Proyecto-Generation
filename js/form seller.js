@@ -280,7 +280,8 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-//Registro Usuario (user)
+
+//Registro vendedor (seller)
 
 // Example POST method implementation:
 async function postData(url = '', data = {}) {
@@ -299,22 +300,30 @@ async function postData(url = '', data = {}) {
 	console.log(response);
 	return response; // parses JSON response into native JavaScript objects
 }
-  
+  console.log("iudasiopfjnsdionj")
 
   
 formulario.addEventListener('submit', (e) => {
     e.preventDefault();
-	const url = "http://localhost:8080/api/aceradecomida/";
+	const url = "http://localhost:8080/api/aceradecomida_seller/";
 	const name = document.getElementById('nombre').value;
-	const email = document.getElementById('email').value;
 	const password = document.getElementById('password').value;
-console.log(name,password,email);
-	const newuser={
+	const email = document.getElementById('email').value;
+	const titular = document.getElementById('titular').value;
+	const telefono = document.getElementById('telefono').value;
+	const localizacion = document.getElementById('localizacion').value;
+
+	console.log(name,password,email,titular,telefono,localizacion);
+	const newseller={
 		username : name,
 		email : email, 
-		password : password
+		password : password,
+		titular : titular,
+		telefono : telefono,
+		localizacion : localizacion
 	};
-	postData(url, newuser)
+	console.log(newseller);
+	postData(url, newseller)
 	.then(data => {
 		console.log(data);
 		if (data.status===200){
@@ -325,56 +334,3 @@ console.log(name,password,email);
 		}
 	});
 });
-
-
-//Registro vendedor (seller)
-
-// // Example POST method implementation:
-// async function postData(url = '', data = {}) {
-// 	// Default options are marked with *
-// 	const response = await fetch(url, {
-// 	  method: 'POST', // *GET, POST, PUT, DELETE, etc.
-// 	  mode: 'cors', // no-cors, *cors, same-origin
-// 	  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-// 	  credentials: 'same-origin', // include, *same-origin, omit
-// 	  headers: {
-// 		'Content-Type': 'application/json'
-// 		// 'Content-Type': 'application/x-www-form-urlencoded',
-// 	  },
-// 	  body: JSON.stringify(data) // body data type must match "Content-Type" header
-// 	});
-// 	console.log(response);
-// 	return response; // parses JSON response into native JavaScript objects
-// }
-  
-
-  
-// formulario.addEventListener('submit seller', (e) => {
-//     e.preventDefault();
-// 	const url = "http://localhost:8080/api/aceradecomida_seller/";
-// 	const name = document.getElementById('nombre seller').value;
-// 	const password = document.getElementById('password seller').value;
-// 	const email = document.getElementById('email seller').value;
-// 	const titular = document.getElementById('titular').value;
-// 	const telefono = document.getElementById('telefono seller').value;
-// 	const localizacion = document.getElementById('localizacion seller').value;
-// 	console.log(name,password,email,titular,telefono,localizacion);
-// 	const newseller={
-// 		username : name,
-// 		email : email, 
-// 		password : password,
-// 		titular : titular,
-// 		telefono : telefono,
-// 		localizacion : localizacion
-// 	};
-// 	postData(url, newseller)
-// 	.then(data => {
-// 		console.log(data);
-// 		if (data.status===200){
-
-// 			console.log("Registro Exitoaso"); // JSON data parsed by `data.json()` call
-// 		}else{
-// 			console.log("Registro Fallido"); // JSON data parsed by `data.json()` call
-// 		}
-// 	});
-// });

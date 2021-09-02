@@ -18,29 +18,29 @@ function addProducts () {
     listProductos();
 }
 
-function listProductos (){
-    $("#list-products").html(
-            `
-                <tr>
-                    <th width=200> Producto </th>
-                    <th style="text-align: center" width=100> Precio </th>
-                    <th style="text-align: center" width=100> Editar </th>
-                    <th style="text-align: center" width=100> Eliminar </th>
-                </tr>`
-    );
+// function listProductos (){
+//     $("#list-products").html(
+//             `
+//                 <tr>
+//                     <th width=200> Producto </th>
+//                     <th style="text-align: center" width=100> Precio </th>
+//                     <th style="text-align: center" width=100> Editar </th>
+//                     <th style="text-align: center" width=100> Eliminar </th>
+//                 </tr>`
+//     );
 
-    for (let i in obtenerData) {
-        let data = JSON.parse(obtenerData[i]);
-        $("#list-products").append(
-                        `<tr>
-                            <td>${data.Producto}</td>
-                            <td align="center">$${data.Price}.00</td>
-                            <td align="center"> <a id="${i}" class="btnEditar" href="#"> <img src="./img/icon-edit.gif" width="25px" height="25px"/></a></td>
-                            <td align="center"> <a id="${i}" class="btnEliminar" href="./profile-business.html"> <img src="./img/icon-trash.gif" width="25px" height="25px"/></a></td>
-                        </tr>`);
-    }
+//     for (let i in obtenerData) {
+//         let data = JSON.parse(obtenerData[i]);
+//         $("#list-products").append(
+//                         `<tr>
+//                             <td>${data.Producto}</td>
+//                             <td align="center">$${data.Price}.00</td>
+//                             <td align="center"> <a id="${i}" class="btnEditar" href="#"> <img src="./img/icon-edit.gif" width="25px" height="25px"/></a></td>
+//                             <td align="center"> <a id="${i}" class="btnEliminar" href="./profile-business.html"> <img src="./img/icon-trash.gif" width="25px" height="25px"/></a></td>
+//                         </tr>`);
+//     }
 
-}
+// }
 
 listProductos();
 
